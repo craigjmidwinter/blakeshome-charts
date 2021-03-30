@@ -30,6 +30,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
+    {{- if .Values.config }}
       initContainers:
         - name: config
           securityContext:
@@ -53,6 +54,7 @@ spec:
               {{- if .Values.masksConfigMap }}
               cp /masks/* /config;
               {{- end }}
+    {{- end }}
 
       containers:
         - name: {{ .Chart.Name }}
@@ -130,9 +132,11 @@ spec:
         {{- else }}
           emptyDir: {}
         {{- end }}
+       {{- if .Values.config }}
         - name: configmap
           configMap:
             name: {{ template "frigate.fullname" . }}
+        {{- end }}
         - name: masks
           {{- if .Values.masksConfigMap }}
           configMap:
