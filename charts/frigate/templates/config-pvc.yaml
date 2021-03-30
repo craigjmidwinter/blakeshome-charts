@@ -1,7 +1,7 @@
 {{- if and .Values.persistence.config.enabled (not .Values.persistence.config.existingClaim) }}
 kind: PersistentVolumeClaim
 apiVersion: v1
-metaconfig:
+metadata:
   name: {{ template "frigate.fullname" . }}-config
   {{- if .Values.persistence.config.skipuninstall }}
   annotations:
