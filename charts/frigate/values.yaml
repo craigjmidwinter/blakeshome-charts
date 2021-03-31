@@ -12,6 +12,7 @@ image:
   tag: 0.8.0-amd64
   pullPolicy: IfNotPresent
 
+
 rtspPassword: password
 
 # secret name containing environment variables for frigate
