@@ -3,9 +3,9 @@ entries:
   frigate:
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2021-03-31T02:35:22.538838121Z"
+    created: "2021-03-31T02:55:33.069113846Z"
     description: NVR With Realtime Object Detection for IP Cameras
-    digest: ae1bfda60853d0daf6dafb8def2642572c15cd2164e34b5d4984b06e2e8a125e
+    digest: 1de9bbe5141d439e9df43aaa0c1a313d4ecb2bd8e6fcf4a544a7e3bc6912b153
     home: https://github.com/blakeblackshear/blakeshome-charts/tree/master/charts/frigate
     icon: https://github.com/blakeblackshear/frigate/blob/master/docs/static/img/frigate.png
     keywords:
@@ -21,8 +21,8 @@ entries:
     sources:
     - https://github.com/blakeblackshear/frigate
     urls:
-    - https://github.com/craigjmidwinter/blakeshome-charts/releases/download/frigate-5.0.2/frigate-5.0.2.tgz
-    version: 5.0.2
+    - https://github.com/craigjmidwinter/blakeshome-charts/releases/download/frigate-5.0.3/frigate-5.0.3.tgz
+    version: 5.0.3
   - apiVersion: v2
     appVersion: 0.8.0
     created: "2021-01-31T03:48:38.080450045Z"
@@ -45,4 +45,4 @@ entries:
     urls:
     - https://github.com/blakeblackshear/blakeshome-charts/releases/download/frigate-5.0.1/frigate-5.0.1.tgz
     version: 5.0.1
-generated: "2021-03-31T02:35:42.085783696Z"
+generated: "2021-01-31T03:48:54.505058039Z"
